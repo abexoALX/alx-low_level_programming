@@ -4,8 +4,6 @@
 *main - main block
 *Description: Write a program that prints all possible
 *different combinations of two digits
-*Numbers must be separated by ,, followed by a space
-*All your code should be in the main function
 *Return: 0
 */
 int main(void)
@@ -13,7 +11,6 @@ int main(void)
 int c;
 int d;
 int e = 0;
-
 while (e < 10)
 {
 d = 0;
@@ -33,26 +30,16 @@ if (c != d && d != e && e < d && d < c)
 
 if (c + d + e != 9 + 8 + 7)
 {
-
 putchar(',');
 putchar(' ');
-
 }
-
 }
-
 c++;
-
 }
-
 d++;
-
 }
-
 e++;
-
 }
 putchar('\n');
 return (0);
-
 }
