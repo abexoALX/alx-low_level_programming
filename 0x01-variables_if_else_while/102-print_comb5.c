@@ -35,7 +35,7 @@ while (c < 10)
 		{
 			putchar(',');
 			putchar(' ');
-		}	
+		}
 	}
 	c++;
 }
