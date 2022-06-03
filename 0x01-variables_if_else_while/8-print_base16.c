@@ -17,12 +17,12 @@ putchar(digit);
 digit++;
 }
 
-char nex = 'a';
+char n = 'a';
 
-while (nex <= 'f')
+while (n <= 'f')
 {
-putchar(nex);
-nex++;
+putchar(n);
+n++;
 }
 
 putchar('\n');
