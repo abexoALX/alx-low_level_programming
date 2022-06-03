@@ -3,6 +3,7 @@
 /**
 *main - main block
 *Description: Write a program that prints all possible
+*different digit ahould not be equal
 *different combinations of two digits
 *Return: 0
 */
