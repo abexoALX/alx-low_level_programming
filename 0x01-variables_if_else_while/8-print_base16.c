@@ -9,20 +9,20 @@
 int main(void)
 {
 
-char digit = '0';
+char d = '0';
+char a = 'a';
 
-while (digit <= '9')
+
+while (d <= '9')
 {
-putchar(digit);
-digit++;
+putchar(d);
+d++;
 }
 
-char n = 'a';
-
-while (n <= 'f')
+while (a <= 'f')
 {
-putchar(n);
-n++;
+putchar(a);
+a++;
 }
 
 putchar('\n');
