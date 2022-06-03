@@ -11,7 +11,7 @@ int main(void)
 int c = 0;
 while (c < 10)
 {
-putchar(2 + c);
+putchar(48 + c);
 c++;
 }
 
