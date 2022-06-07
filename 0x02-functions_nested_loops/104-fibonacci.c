@@ -14,7 +14,7 @@ while (i < 98)
 	next = x + y;
 	x = y;
 	y = next;
-	printf("%lu", next);
+	printf("%u", next);
 	if (i < 97)
 	{
 	printf(", ");
