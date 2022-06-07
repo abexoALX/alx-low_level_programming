@@ -15,12 +15,10 @@ while (i < 98)
 	x = y;
 	y = next;
 	printf("%lu", next);
-	
 	if (i < 97)
 	{
 	printf(", ");
 	}
-	
 	i++;
 
 }
