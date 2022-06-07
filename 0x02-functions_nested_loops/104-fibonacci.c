@@ -7,18 +7,20 @@
 */
 int main(void)
 {
-unsigned int x = 0, y = 1, next = 0;
+unsigned long int x = 0, y = 1, next = 0;
 int i = 0;
 while (i < 98)
 {
 	next = x + y;
 	x = y;
 	y = next;
-	printf("%u", next);
+	printf("%lu", next);
+	
 	if (i < 97)
 	{
 	printf(", ");
 	}
+	
 	i++;
 
 }
