@@ -1,16 +1,17 @@
 #include "main.h"
 /**
 *print_last_digit - return last digit
-*@n : number to check
+*@n : number to cijheck
 *Return:0 or 1
 */
 int print_last_digit(int n)
 {
+int last;
 n = n >= 0 ? n : n * -1;
 
-int test = n % 10;
+last = n % 10;
 
-_putchar('0' + test);
+_putchar('0' + last);
 
-return (test);
+return (last);
 }
