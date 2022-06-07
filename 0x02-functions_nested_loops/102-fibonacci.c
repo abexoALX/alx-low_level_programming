@@ -17,7 +17,6 @@ while (i < 50)
 	printf("%lu", next);
 	if (i < 49)
 		printf(", ");
-	
 	i++;
 }
 putchar('\n');
