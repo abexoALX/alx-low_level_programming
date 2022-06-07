@@ -7,15 +7,15 @@
 */
 int main(void)
 {
-long int x = 0, y = 1, next;
+unsigned long int x = 0, y = 1, next;
 int i = 0;
-while (i < 99)
+while (i < 98)
 {
 	next = x + y;
 	x = y;
 	y = next;
 	printf("%lu", next);
-	if (i < 98)
+	if (i < 97)
 	{
 	printf(", ");
 	}
