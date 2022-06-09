@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <math.h>
 /**
 *main - prime numbers
 *Return: Always 0.
 */
 int main(void)
 {
-unsigned int long n = 612852475143, a = (int) sqrt(n);
+unsigned int long n = 612852475143, a;
+a = n / 2;
 while (1)
 {
 
@@ -16,7 +16,6 @@ while (1)
 		break;
 	}
 	a--;
-
 }
 return (0);
 }
