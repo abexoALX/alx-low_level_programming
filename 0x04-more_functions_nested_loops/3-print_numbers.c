@@ -6,7 +6,7 @@
 void print_numbers(void)
 {
 	char n = 0;
-	while (n <= 9)
+	while (n < 10)
 	{
 		_putchar('0' + n);
 		n++;
