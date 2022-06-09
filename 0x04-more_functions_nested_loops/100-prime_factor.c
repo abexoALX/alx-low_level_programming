@@ -1,21 +1,19 @@
 #include <stdio.h>
 /**
-*main - prime numbers
+*main - Entry point
 *Return: Always 0.
 */
 int main(void)
 {
-unsigned int long n = 612852475143, a;
-a = n / 2;
-while (1)
+long n, i;
+n = 612852475143;
+for (i = 2; i < n; i++))
 {
-
-	if (n % a == 0)
+	while(n % i == 0)
 	{
-		printf("%lu \n", n / a);
-		break;
+	 	n = n / i;
 	}
-	a--;
 }
+printf("%lu\n", n);
 return (0);
 }
