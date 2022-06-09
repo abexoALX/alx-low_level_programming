@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
-*main - causes an infinite loop
+*main - main block
+*Description - remove causes an infinite loop
 *Return: 0
 */
 int main(void)
