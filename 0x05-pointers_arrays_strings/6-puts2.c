@@ -1,20 +1,20 @@
 #include "main.h"
 /**
-*puts2 - prints a string, followed by a new line,
+*puts2 - prints a string, followed by a new line using pointer,
 *@str: pointer to the string to print
 *Return: void
 */
 void puts2(char *str)
 {
-int i = 0;
-while (str[i] )
+int j = 0;
+while (str[j] )
 {
-	if (i % 2 == 0)
+	if (j % 2 == 0)
 	{
-		_putchar(str[i]);
+		_putchar(str[j]);
 	}
 
-	i++;
+	j++;
 }
 _putchar('\n');
 }
