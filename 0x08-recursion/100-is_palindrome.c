@@ -22,7 +22,7 @@ int is_palindrome(char *s)
 {
 int end = len(s);
 
-return (check(s, 0, end - 1, end % 2));
+return (compare(s, 0, end - 1, end % 2));
 }
 /**
 *compare - checker for the palindrome
