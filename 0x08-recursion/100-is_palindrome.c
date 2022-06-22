@@ -7,10 +7,8 @@
 int len(char *s)
 {
 int n = 0;
-
 if (*s > '\0')
 	n += len(s + 1) + 1;
-
 return (n);
 }
 /**
@@ -21,7 +19,6 @@ return (n);
 int is_palindrome(char *s)
 {
 int end = len(s);
-
 return (compare(s, 0, end - 1, end % 2));
 }
 /**
@@ -34,17 +31,16 @@ return (compare(s, 0, end - 1, end % 2));
 */
 int compare(char *s, int st, int e, int x)
 {
-
-if ((st == e && x != 0) || (st == e + 1 && x == 0))
-{
-	 return (1);
-}
-else if (s[st] != s[e])
-{
-	return (0);
-}
-else
-{
-	return (compare(s, st + 1, e - 1, x));
-}
+	if ((st == e && x != 0) || (st == e + 1 && x == 0))
+	{
+		return (1);
+	}
+	else if (s[st] != s[e])
+	{
+		return (0);
+	}
+	else
+	{
+		return (compare(s, st + 1, e - 1, x));
+	}
 }
