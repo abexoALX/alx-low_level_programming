@@ -45,6 +45,6 @@ else if (s[st] != s[e])
 }
 else
 {
-	return (check(s, st + 1, e - 1, x));
+	return (compare(s, st + 1, e - 1, x));
 }
 }
