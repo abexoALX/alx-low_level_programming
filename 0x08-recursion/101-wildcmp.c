@@ -1,18 +1,15 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * wildcmp - check the code for Holberton School students.
  * @s1: string
  * @s2: string
  * Return: Always 0.
  */
-
 int wildcmp(char *s1, char *s2)
 {
 return (checker(s1, s2, 0, 0, -1));
 }
-
 /**
  * checkLast - check last char of s2 when s1 ends
  * @s: string
@@ -69,5 +66,4 @@ if (s2[b] != '\0')
 	return (checkLast(s2, b));
 
 return (1);
-
 }
