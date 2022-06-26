@@ -58,7 +58,6 @@ unsigned int nbr_spaces(char *s)
 char **strtow(char *str)
 {
 int i;
-int spaces = nbr_spaces(str);
 char **tokens = NULL;
 char *token;
 int checkingSpace = 0;
