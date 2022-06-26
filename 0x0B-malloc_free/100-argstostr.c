@@ -59,7 +59,7 @@ char **strtow(char *str)
 {
 int i;
 int spaces = nbr_spaces(str);
-char **tokens = NULL;//malloc(sizeof(char *) * (spaces));
+char **tokens = NULL;
 char *token;
 int checkingSpace = 0;
 int word = 0;
