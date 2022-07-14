@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdlib.h>
+#include <stdio.h>
 /**
 *struct list_s - singly linked list
 *@str: string - (malloc'ed string)
