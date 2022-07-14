@@ -1,6 +1,5 @@
 #include "lists.h"
 /**
-* __attribute__ - returns nothing it just prints string
 *premain - run before main
 */
 void __attribute__ ((constructor)) premain()
