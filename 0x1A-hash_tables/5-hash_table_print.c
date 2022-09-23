@@ -1,25 +1,29 @@
 #include "hash_tables.h"
+#include <stdio.h>
 /**
-*hash_table_delete - prints all hash values with key
-*@ht: struct poniter
-*Return: void
-*/
-void hash_table_delete(hash_table_t *ht)
+ *hash_table_print - prints all hash values with key
+ *@ht: struct poniter
+ *Return: void
+ */
+void hash_table_print(const hash_table_t *ht)
 {
-unsigned long int i;
-hash_node_t *temp, *hold;
+int a = 0;
+hash_node_t *temp;
+unsigned long int i = 0;
+if (ht != NULL)
+{
+printf("{");
 for (i = 0 ; i < ht->size; i++)
 {
 temp = ht->array[i];
 while (temp != NULL)
 {
-hold = temp;
+if (a != 0)
+printf(", ");
+printf("'%s': '%s'", temp->key, temp->value);
 temp = temp->next;
-free(hold->key);
-free(hold->value);
-free(hold);
+a = 87;
 }
 }
-free(ht->array);
-free(ht);
+printf("}\n");
 }
