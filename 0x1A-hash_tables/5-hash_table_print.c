@@ -1,25 +1,25 @@
 #include "hash_tables.h"
 /**
-*hash_table_get - lookup function
-*@ht: hash table struct pointer
-*@key: key
-*Return: value
+*hash_table_delete - prints all hash values with key
+*@ht: struct poniter
+*Return: void
 */
-char *hash_table_get(const hash_table_t *ht, const char *key)
+void hash_table_delete(hash_table_t *ht)
 {
-unsigned long x;
-hash_node_t *current;
-if (ht  == NULL || key == NULL)
-return (NULL);
-x = key_index((const unsigned char *)key, ht->size);
-current = ht->array[x];
-while (current != NULL)
+unsigned long int i;
+hash_node_t *temp, *hold;
+for (i = 0 ; i < ht->size; i++)
 {
-if (strcmp(current->key, key) == 0)
+temp = ht->array[i];
+while (temp != NULL)
 {
-return (current->value);
+hold = temp;
+temp = temp->next;
+free(hold->key);
+free(hold->value);
+free(hold);
 }
-current = current->next;
 }
-return (NULL);
+free(ht->array);
+free(ht);
 }
